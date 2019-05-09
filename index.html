@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" type="image/png" href="images/images1.png"/>
+	<title>Holmes</title>
+	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+   <header>
+   	 <nav id="header-nav" class="navbar navbar-default">
+   	 	<div class="container">
+   	 		<div class="navbar-header">
+   	 			<a href="index.html" class="pull-left visible-md visible-lg">
+   	 				<div id="logo-img" alt="Logo image" ></div>
+   	 			</a>
+   	 			<div class="navbar-brand">
+   	 				<a href="index.html"><h1>Holmes Burgers</h1><br></a>
+   	 				<h2>&nbsp The Best burger in town</h2>
+   	 			</div>
+   	 			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+   	 		</div>
+   <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+             <li class="visible-xs active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li>
+              <a href="menu.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-envelope"></span><br class="hidden-xs">Contact US</a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <div class="container-fluid">
+  <img class="mySlides" src="images\1.jpg">
+  <img class="mySlides" src="images\3.jpg">
+  <img class="mySlides" src="images\4.jpg">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+  <div id="main-content" class="container-fluid">
+
+    <div id="home-tiles" class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="menu.html"><div id="menu-tile"><span>menu</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <a href="https://goo.gl/maps/Z6XVdQ3YmtL2" target="_blank">
+          <div id="map-tile">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.4648089734897!2d29.947506015142977!3d31.20784948147404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc1b872e69a32ca86!2sHolmes+Burgers!5e0!3m2!1sen!2seg!4v1536233247514" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <span>map</span>
+          </div>
+
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="panel-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours</span><br>
+          Sat-Thurs: 11:00am - 12:00pm<br>
+          Fri: 11:00am - 1:00am<br>
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address</span><br>
+          Smouha: in front of Mubark Club<br>
+          Louran: 301 Gleem street
+          
+          <hr class="visible-xs">
+        </section>
+        <section id="social" class="col-sm-4">
+          <span>Follow us</span>
+          <br>
+          <a href="https://www.facebook.com/holmesburgers/?fb_dtsg_ag=AdwBCXaOR2rsf97j2fyAc6LGBuGrsxqLl54aRsZ9EjZpdA%3AAdwYb6xIRF_kgDYct4iRjCOyTfRvAm61AygRqJdHbQJu1A" target="_blank"><img src="images/facebook.png" width="7%" alt="facebook-logo"></a>
+          <a href="https://www.instagram.com/holmesburgers" target="_blank"><img src="images/instagram-logo.png" width="6%" alt="instagram-logo"></a>
+        </section>
+      </div>
+     <!--  <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div> -->
+    </div> 
+  </footer>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+ 		<script src="js/bootstrap.min.js"></script>
+		<script type="js/script.js"></script>
+
+</body>
+</html>
